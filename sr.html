@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Login page</title>
+<script>
+
+	{
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+        var Branch = document.getElementById("Branch").value;
+        var year = document.getElementById("year").value;
+
+
+	var address = document.getElementById("address").value;
+	localStorage.setItem("name",name);
+	localStorage.setItem("email",email);
+	
+	localStorage.setItem("Branch",Branch);
+	localStorage.setItem("year",year);
+	localStorage.setItem("address",address);
+	return;
+            }
+</script>
+</head>
+<body>
+<h1>login Page</h1>
+<form action="Details.html">
+<fieldset>
+
+<label> Name </label>
+<input type="text" id="name"/><br><br>
+<label> Email ID </label>
+<input type="email" id="email"/><br><br>
+
+<label> Address </label>
+<input type="address" id="address"/><br><br>
+<input type="submit" value="submit" onclick="passvalues()"/>
+</fieldset>
+</form>
+</body>
+</html>
+
+
